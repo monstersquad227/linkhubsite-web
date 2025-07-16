@@ -13,6 +13,19 @@
     align-items: center;
 }
 
+.header-content-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-content-left img {
+    height: 2.25rem;
+    width: auto;
+    margin-right: 0.5rem;
+    object-fit: contain;
+    display: block;
+}
+
 .header-title {
     font-size: 1.5rem;
     font-weight: 700;
