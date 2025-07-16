@@ -1,1 +1,154 @@
-<h1>linkhub</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="header-title">LinkHub</h1>
+            <nav class="header-nav">
+                <a href="#features">功能特色</a>
+                <a href="#pricing">价格方案</a>
+                <a href="#contact">联系我们</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <h2>为企业打造更智能的短链接</h2>
+        <p>创建、追踪并管理短链接，配备高级分析功能与企业级安全保障。</p>
+        <a onclick="openModal()" class="hero-button">立即免费开始使用</a>
+    </section>
+
+    <section id="features" class="features-section">
+        <h3>功能特色</h3>
+        <div class="features-grid">
+            <div class="feature-item">
+                <h4>快速生成短链接</h4>
+                <p>支持长链接快速转换为短链接，提供高可用短链跳转服务。</p>
+            </div>
+            <div class="feature-item">
+                <h4>用户访问行为分析</h4>
+                <p>自动识别用户设备、浏览器、IP 和地域，生成可视化点击报表。</p>
+            </div>
+            <div class="feature-item">
+                <h4>企业级 API 接入</h4>
+                <p>提供 RESTful API 接口，便于系统集成与自动化批量生成短链。</p>
+            </div>
+            <div class="feature-item">
+                <h4>短链有效期控制</h4>
+                <p>可设置短链接有效时长，支持一次性访问或分钟级时效。</p>
+            </div>
+            <div class="feature-item">
+                <h4>私有化部署</h4>
+                <p>支持企业私有部署，保障数据安全与业务独立性。</p>
+            </div>
+            <div class="feature-item">
+                <h4>操作日志与安全审计</h4>
+                <p>记录所有短链生成与访问记录，便于合规审计与溯源。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+        <h3>价格方案</h3>
+        <div class="pricing-grid">
+            <!-- 免费版 -->
+            <div class="pricing-card free">
+                <h4>免费版</h4>
+                <p class="subtitle">基础使用，适用于个人用户</p>
+                <ul>
+                    <li>✔️ 支持生成短链接</li>
+                    <li>✔️ 短链接有效期 30 分钟</li>
+                    <li>✖️ 无数据分析功能</li>
+                </ul>
+                <p class="price">¥0 / 月</p>
+            </div>
+
+            <!-- 企业版 -->
+            <div class="pricing-card enterprise">
+                <h4>企业版</h4>
+                <p class="subtitle">适用于私有部署需求</p>
+                <ul>
+                    <li>✔️ 私有化部署</li>
+                    <li>✔️ 开放 API 接口</li>
+                    <li>✖️ 无可视化报表</li>
+                </ul>
+                <p class="price">定制报价</p>
+            </div>
+
+            <!-- 企业 Pro 版 -->
+            <div class="pricing-card pro">
+                <h4>企业 Pro 版</h4>
+                <p class="subtitle">满足高级数据分析场景</p>
+                <ul>
+                    <li>✔️ 查看用户点击明细</li>
+                    <li>✔️ 生成可视化报表</li>
+                    <li>✔️ 包含企业版全部功能</li>
+                </ul>
+                <p class="price">定制报价</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h3>联系我们</h3>
+        <p>
+            如需帮助或洽谈企业合作，请联系：
+            <a href="mailto:monstersquad227@gmail.com" class="contact-link">monstersquad227@gmail.com</a>
+        </p>
+        <p class="contact-phone-wechat">
+            手机：<span class="highlight">138-0000-0000</span>　｜　微信：<span class="highlight">monstersquad</span>
+        </p>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <h3>常见问题</h3>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h4>短链接是否有访问次数限制？</h4>
+                <p>我们的短链接不限制访问次数。免费版仅对单个短链的有效期（30 分钟）做了限制；企业版及 Pro 版用户可根据业务需求自定义有效期，实现长期稳定可用。</p>
+            </div>
+            <div class="faq-item">
+                <h4>是否支持私有化部署和企业专属域名？</h4>
+                <p>我们支持私有化部署，可运行在企业自有服务器上，并使用企业自有域名。系统可与短信服务商对接，支持灵活定制业务需求。
+                    需要注意的是：在电信运营商的短信发送中，如短链的备案主体与企业主体不一致，可能会导致短信发送失败或被拦截。私有部署方案可有效避免此类问题，确保短信顺利下发。</p>
+            </div>
+            <div class="faq-item">
+                <h4>是否支持自定义域名？</h4>
+                <p>自定义域名功能仅在企业版及以上版本中提供，允许您使用自己的品牌域名生成短链接。</p>
+            </div>
+            <div class="faq-item">
+                <h4>可以查看访问者的设备信息吗？</h4>
+                <p>企业 Pro 版支持详细的访问分析，包括用户设备、操作系统、浏览器和地理位置等。</p>
+            </div>
+            <div class="faq-item">
+                <h4>支持 API 接入吗？</h4>
+                <p>企业版和 Pro 版均开放 RESTful API，支持自动化批量生成短链接和数据同步。</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal">
+        <div>
+            <h3>生成短链接</h3>
+            <input id="longUrlInput" type="text" placeholder="请输入长链接" />
+            <div class="btn-group">
+                <button class="generate" onclick="generateShortLink()">生成</button>
+                <button class="cancel" onclick="closeModal()">取消</button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        © 2025 LinkHub. All rights reserved.
+    </footer>
+</body>
+</html>
