@@ -1,0 +1,360 @@
+/* header */
+.header {
+    background-color: #4f46e5;
+    color: white;
+    padding: 1.5rem;
+}
+
+.header-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.header-nav a {
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+/* hero-section */
+.hero-section {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #f9fafb;
+    color: #4b5563;
+}
+
+.hero-section h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.hero-section p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-button {
+    background-color: #4f46e5;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(79, 70, 229, 0.4);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #4338ca;
+}
+
+/* features-section */
+.features-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.features-section h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #111827;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+    gap: 2.5rem;
+    text-align: center;
+    color: #374151;
+}
+
+.feature-item h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+/* pricing-section */
+.pricing-section {
+    background-color: #f3f4f6;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.pricing-section h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #111827;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.1), 0 1px 2px rgb(0 0 0 / 0.06);
+    text-align: center;
+}
+
+.pricing-card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.pricing-card .subtitle {
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.pricing-card ul {
+    color: #374151;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.pricing-card ul li {
+    margin-bottom: 0.25rem;
+}
+
+.pricing-card.enterprise {
+    border: 2px solid #4f46e5;
+}
+
+.pricing-card.enterprise h4 {
+    color: #4f46e5;
+}
+
+.pricing-card.enterprise .price {
+    color: #4f46e5;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.pricing-card .price {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #111827;
+}
+
+/* contact-section */
+.contact-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #111827;
+}
+
+.contact-section p {
+    color: #4b5563;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.contact-section a.contact-link {
+    color: #4f46e5;
+    text-decoration: underline;
+}
+
+.contact-phone-wechat {
+    margin-top: 0.5rem;
+}
+
+.highlight {
+    color: #4f46e5;
+}
+
+/* faq-section */
+.faq-section {
+    background-color: #ffffff;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.faq-section h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #111827;
+}
+
+.faq-list {
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #374151;
+}
+
+.faq-item h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* footer */
+.footer {
+    background-color: #e5e7eb;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+/* modal */
+#modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 50;
+}
+
+#modal.show {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+#modal>div {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+#modal>div h3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 4px #6366f1;
+}
+
+.btn-group {
+    text-align: right;
+}
+
+button {
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-left: 8px;
+}
+
+button.generate {
+    background-color: #4f46e5;
+    color: white;
+}
+
+button.generate:hover {
+    background-color: #4338ca;
+}
+
+button.cancel {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+button.cancel:hover {
+    background-color: #d1d5db;
+}
+
+#result {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #16a34a;
+    font-weight: 600;
+    display: none;
+}
