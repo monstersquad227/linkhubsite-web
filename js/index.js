@@ -12,9 +12,22 @@ function closeModal() {
 }
 
 async function generateShortLink() {
-    const longUrl = document.getElementById('longUrlInput').value.trim();
-    if (!longUrl) {
-        alert("请输入有效的长链接");
+    const input = document.getElementById('longUrlInput');
+    const errorMessage = document.getElementById('errorMessage');
+    const result = document.getElementById('result');
+    const longUrl = input.value.trim();
+
+    // 重置错误状态
+    input.classList.remove('input-error');
+    errorMessage.classList.add('hidden');
+    result.style.display = 'none';
+
+    // 验证链接格式
+    const urlPattern = /^https?:\/\/.+$/;
+    if (!longUrl || !urlPattern.test(longUrl)) {
+        input.classList.add('input-error');
+        errorMessage.textContent = '请输入以 http:// 或 https:// 开头的有效链接';
+        errorMessage.classList.remove('hidden');
         return;
     }
 
