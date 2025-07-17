@@ -229,6 +229,10 @@
     color: #4f46e5;
 }
 
+.highlight:hover {
+    text-decoration: underline;
+}
+
 /* faq-section */
 .faq-section {
     background-color: #ffffff;
